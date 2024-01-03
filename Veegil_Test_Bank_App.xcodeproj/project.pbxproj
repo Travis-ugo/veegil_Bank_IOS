@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B45867132B24DF8C00A33367 /* PerformanceAnalyticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45867122B24DF8C00A33367 /* PerformanceAnalyticsView.swift */; };
+		B45867152B24DFBD00A33367 /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45867142B24DFBD00A33367 /* TransactionsView.swift */; };
+		B45867172B24DFF600A33367 /* DashBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45867162B24DFF600A33367 /* DashBoardView.swift */; };
+		B45867192B24E34900A33367 /* TransactionHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45867182B24E34900A33367 /* TransactionHistoryView.swift */; };
+		B458671B2B24EB6000A33367 /* TransactionHistoryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B458671A2B24EB6000A33367 /* TransactionHistoryDetails.swift */; };
 		B45F65BF2B1942EC00602402 /* Veegil_Test_Bank_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45F65BE2B1942EC00602402 /* Veegil_Test_Bank_AppApp.swift */; };
 		B45F65C12B1942EC00602402 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45F65C02B1942EC00602402 /* ContentView.swift */; };
 		B45F65C32B1942EE00602402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45F65C22B1942EE00602402 /* Assets.xcassets */; };
@@ -34,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B45867122B24DF8C00A33367 /* PerformanceAnalyticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceAnalyticsView.swift; sourceTree = "<group>"; };
+		B45867142B24DFBD00A33367 /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
+		B45867162B24DFF600A33367 /* DashBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardView.swift; sourceTree = "<group>"; };
+		B45867182B24E34900A33367 /* TransactionHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryView.swift; sourceTree = "<group>"; };
+		B458671A2B24EB6000A33367 /* TransactionHistoryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryDetails.swift; sourceTree = "<group>"; };
 		B45F65BB2B1942EC00602402 /* Veegil_Test_Bank_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Veegil_Test_Bank_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B45F65BE2B1942EC00602402 /* Veegil_Test_Bank_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Veegil_Test_Bank_AppApp.swift; sourceTree = "<group>"; };
 		B45F65C02B1942EC00602402 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +81,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B458670E2B24DF3A00A33367 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B45867122B24DF8C00A33367 /* PerformanceAnalyticsView.swift */,
+				B45867142B24DFBD00A33367 /* TransactionsView.swift */,
+				B45867162B24DFF600A33367 /* DashBoardView.swift */,
+				B45867182B24E34900A33367 /* TransactionHistoryView.swift */,
+				B458671A2B24EB6000A33367 /* TransactionHistoryDetails.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B458670F2B24DF4600A33367 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B45867102B24DF4F00A33367 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B45867112B24DF5700A33367 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		B45F65B22B1942EC00602402 = {
 			isa = PBXGroup;
 			children = (
@@ -94,9 +137,14 @@
 		B45F65BD2B1942EC00602402 /* Veegil_Test_Bank_App */ = {
 			isa = PBXGroup;
 			children = (
+				B45867112B24DF5700A33367 /* Utilities */,
+				B45867102B24DF4F00A33367 /* Models */,
+				B458670F2B24DF4600A33367 /* ViewModels */,
+				B458670E2B24DF3A00A33367 /* Views */,
 				B45F65BE2B1942EC00602402 /* Veegil_Test_Bank_AppApp.swift */,
 				B45F65C02B1942EC00602402 /* ContentView.swift */,
 				B45F65C22B1942EE00602402 /* Assets.xcassets */,
+				B45F65E82B19433000602402 /* App */,
 				B45F65C42B1942EE00602402 /* Preview Content */,
 			);
 			path = Veegil_Test_Bank_App;
@@ -125,6 +173,45 @@
 				B45F65DB2B1942EE00602402 /* Veegil_Test_Bank_AppUITestsLaunchTests.swift */,
 			);
 			path = Veegil_Test_Bank_AppUITests;
+			sourceTree = "<group>";
+		};
+		B45F65E82B19433000602402 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B45F65EC2B19437600602402 /* Models */,
+				B45F65E92B19435900602402 /* Utilities */,
+				B45F65ED2B1943AF00602402 /* ViewModels */,
+				B45F65EB2B19436B00602402 /* Views */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B45F65E92B19435900602402 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B45F65EB2B19436B00602402 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B45F65EC2B19437600602402 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B45F65ED2B1943AF00602402 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +345,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B45F65C12B1942EC00602402 /* ContentView.swift in Sources */,
+				B45867172B24DFF600A33367 /* DashBoardView.swift in Sources */,
+				B45867152B24DFBD00A33367 /* TransactionsView.swift in Sources */,
+				B45867132B24DF8C00A33367 /* PerformanceAnalyticsView.swift in Sources */,
+				B45867192B24E34900A33367 /* TransactionHistoryView.swift in Sources */,
+				B458671B2B24EB6000A33367 /* TransactionHistoryDetails.swift in Sources */,
 				B45F65BF2B1942EC00602402 /* Veegil_Test_Bank_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
